@@ -1,0 +1,24 @@
+# Build Results
+[Oo]bj/
+[Bb]in/
+[Dd]ebug/
+*.dll
+*.pdb
+packages/
+Backup/
+UpgradeLog.htm
+.sonarqube
+
+# User-specific files
+*.suo
+*.user
+.vs/
+.nuget/
+.config/
+*.lock.json
+
+# Testing content
+media/
+
+# Deployment
+*.pubxml

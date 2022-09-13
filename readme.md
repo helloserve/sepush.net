@@ -1,6 +1,6 @@
 # helloserve.SePush (SePush.Net)
 
-This is a .NET 6.0 client for the https://sepush.co.za service. Available on [Nuget](https://www.nuget.org/packages/helloserve.SePush/).
+This is a .NET Standard 2.0 and .NET 6.0 client for the https://sepush.co.za service. Available on [Nuget](https://www.nuget.org/packages/helloserve.SePush/).
 
 ## Usage
 
@@ -37,7 +37,7 @@ public MyClass(ISePush sePushClient)
 Call it:
 
 ```
-var statuis = await sePushClient.StatusAsync();
+var status = await sePushClient.StatusAsync();
 var areas = await sePushclient.AreasSearchAsync("Cape Town");
 ```
 

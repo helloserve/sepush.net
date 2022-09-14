@@ -3,7 +3,6 @@ using helloserve.SePush.Responses;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -86,7 +85,7 @@ namespace helloserve.SePush
             {
                 queryParams[0] = new Tuple<string, string>("test", testMode);
             }
-            queryParams[1] = id.AsQueryParam("id");
+            queryParams[isTestMode ? 1 : 0] = id.AsQueryParam("id");
 
             var request = BuildGetRequestMessage("area", queryParams);
             return await GetResponse<AreaInformationResponse, AreaInformation>(request, r => r).ConfigureAwait(false);

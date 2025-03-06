@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/helloserve/sepush.net</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <UserSecretsId>ec9265ee-bfa8-4f1f-bfda-6dde287a1c1a</UserSecretsId>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
